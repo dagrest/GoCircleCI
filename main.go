@@ -1,12 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	logic "gocircleci/app/src"
+)
 
 func main() {
 	fmt.Println("Hello CircleIC")
-	fmt.Printf("Foo parameter is: %d", foo(100))
-}
-
-func foo(n int) int {
-	return n
+	fmt.Printf("Foo parameter is: %d", 100)
+	logic.WhichInput(100)
 }
